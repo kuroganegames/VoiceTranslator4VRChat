@@ -10,7 +10,7 @@
 
 | 機能             | 詳細                                                   |
 | ---------------- | ------------------------------------------------------ |
-| 🎙️ 音声認識       | [**`kotoba‑tech/kotoba‑whisper‑v2.0`**](https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0) による日本語 STT |
+| 🎙️ 音声認識       | [**kotoba‑tech/kotoba‑whisper‑v2.0**](https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0) による日本語 STT |
 | 🌐 翻訳           | [**facebook/nllb‑200‑distilled‑600M**](https://huggingface.co/facebook/nllb-200-distilled-600M) (200言語対応)     |
 | 🔌 OSC 出力       | `/chatbox/input` へ UDP 送信し VRChat で即表示         |
 | 📝 コンソール履歴 | 直近 *N* 行をターミナルに保持 (`LOG_HISTORY_SIZE`)     |
@@ -95,14 +95,6 @@ OSC (/chatbox/input) ──► VRChat
 ```
 
 STT・翻訳モデルはローカル推論のみ。送信されるのは短い UDP パケットのみです。 
-
-------
-
-## 📚 拡張アイデア
-
-- **多言語対応** — `src_lang` / `forced_bos_token_id` を変更。
-- **プッシュトゥトーク** — 録音ブロックをキーリスナー付きでラップ。
-- **GUI 化** — PySimpleGUI や Eel で簡易コントロールパネルを実装。
 
 ------
 
