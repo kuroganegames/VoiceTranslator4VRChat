@@ -1,5 +1,3 @@
-思考時間: 5 秒
-
 # Voice Translator for VRChat — 日本語 README
 
 リアルタイムで **日本語音声 → 文字起こし（Whisper） → 英語翻訳（NLLB‑200） → VRChat のチャットボックスへ OSC 送信** を行う軽量 Python ユーティリティです。
